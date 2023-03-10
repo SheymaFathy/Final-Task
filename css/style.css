@@ -1,0 +1,321 @@
+:root {
+    --dark-color: #0F172B;
+    --text-color: #FEA116;
+    --section-color: #eff7fa;
+  }
+  .ff-secondary {
+    font-family: 'Pacifico', cursive;
+}
+.img-thumbnail {
+  padding: 0.25rem;
+  background-color: #F1F8FF;
+  border: 1px solid #dee2e6;
+  border-radius: 2px;
+  max-width: 100%;
+  height: 300px !important;
+}
+
+/*** Spinner ***/
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+}
+
+#spinner.show {
+    transition: opacity .5s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+  body {
+    font-family: "Roboto", sans-serif;
+    background-color: var(--section-color);
+    margin: 0;
+  }
+  .container_home{
+    margin-top: 0.5px;
+  }
+  .main-btn {
+    margin: auto;
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+    padding: 0.5rem 1rem;
+  }
+  .main-btn:hover {
+    color: var(--yellow-color);
+  }
+  .main-title::after {
+    content: "";
+    width: 120px;
+    height: 2px;
+    background-color: var(--green-color);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  /* header */
+  .navbar {
+    background-color: var(--dark-color);
+  }
+  .navbar .navbar-nav .nav-link {
+    color: white;
+  }
+  .navbar .navbar-nav .nav-link.active,
+  .navbar .navbar-nav .nav-link:focus,
+  .navbar .navbar-nav .nav-link:hover {
+    color: var(--text-color);
+  }
+ 
+
+  .btn-admin{
+    color: var(--section-color);
+    text-decoration: none;
+  }
+  .btn-admin:hover{
+    color: var(--text-color);
+    text-decoration: none;
+  }
+  #iconn{
+    color: var(--section-color);
+    margin-right: 2px;
+  }
+  #iconn :hover{
+    color: var(--text-color);
+  }
+  .navbar-brand h1{
+    color: var(--text-color);
+    font-style: italic;
+  }
+  /* End header */
+  .hero-header img {
+    animation: imgRotate 50s linear infinite;
+}
+
+@keyframes imgRotate { 
+    100% { 
+        transform: rotate(360deg); 
+    } 
+}
+.b-container{
+  margin-top: 20px;
+  padding: 10px;
+  width: 90%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+div.item {
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  display: inline-block;
+  width:23%;
+}
+
+div.item:hover {
+  box-shadow: 0 0 5px 4px var(--dark-color)
+}
+
+div.item img {
+  width: 100%;
+  height: 264px !important;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bolder;
+  color: var(--dark-color);
+  display: inline-block;
+}
+div.priceee {
+  padding: 15px;
+  text-align: right;
+  font-size: 20px;
+  font-weight: bolder;
+  color: var(--text-color);
+  display: inline-block;
+}
+div.btnnn {
+  padding: 15px;
+  font-size: 15px;
+  font-weight: bolder;
+  color: var(--text-color);
+  display: inline-block;
+}
+
+.options-list{
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+
+  .details{
+    border-bottom: 3px solid var(--dark-color);
+    width: 46%;
+    margin-top: -310px;
+    margin-left: 205px;
+    float: right;
+    text-align: center;
+  }
+  .details .price{
+    font-size: 20px;
+    color: var(--text-color);
+    font-weight: bold;
+  }
+  .details .order-btn{
+    margin: 20px;
+    height: 50px;
+    border: 1px solid var(--dark-color);
+    border-radius: 10px;
+    outline: none;
+    width: 200px;
+    background-color: var(--dark-color);
+    color: var(--text-color);
+    font-size: 20px;
+  }
+  .details .order-btn:hover{
+    background-color: var(--text-color);
+    border: 1px solid var(--text-color);
+    color: var(--dark-color);
+    outline: none;
+  }
+
+
+
+  /* Start Subscribe */
+.subscribe {
+    background-color: var(--text-color);
+  }
+  .subscribe input[type="text"] {
+    border: none;
+    border-bottom: 1px solid white;
+  }
+  .subscribe input[type="text"]:focus {
+    outline: none;
+  }
+  .subscribe ::placeholder {
+    color: white;
+  }
+  .subscribe input[type="submit"] {
+    background-color: var(--dark-color);
+    color: var(--text-color);
+  }
+  /* End Subscribe */
+  /* Start Footer */
+  .footer {
+    background-color: var(--dark-color);
+  }
+  .footer .copyright > span {
+    color: var(--green-color);
+  }
+  .footer .copyright div span {
+    color: var(--yellow-color);
+  }
+  .footer .contact ul svg {
+    width: 20px;
+    height: 20px;
+  }
+  .footer .facebook {
+    background-color: #1877f2;
+  }
+  .footer .twitter {
+    background-color: #1da1f2;
+  }
+  .footer .linkedin {
+    background-color: #0077b5;
+  }
+  .footer .youtube {
+    background-color: #ff0000;
+  }
+.right-side{
+    float: right;
+}
+  .nav-pills .nav-item .active {
+    border-bottom: 2px solid var(--primary);
+}
+/* admin panal */
+.form-container{
+    padding: 20px;
+    width: 50%;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    background-color: var(--dark-color);
+}
+.form-container table{
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+.form-container table #td {
+    width: 83%;
+    padding: 20px;
+}
+.form-container table #td input{
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.form-container table td{
+
+    font-size: 20px;
+    color: var(--text-color);
+}
+.form-container select{
+    width: 40%;
+    display: block;
+    margin: auto;
+    padding: 6px;
+    border-radius: 10px;
+    background-color: var(--text-color);
+    color: var(--section-color);
+}
+.form-container select option{
+    width: 40%;
+    display: block;
+    margin: auto;
+    padding: 6px;
+    border-radius: 10px;
+    background-color: var(--text-color);
+    color: var(--section-color);
+}
+.form-container .sub{
+    width: 40%;
+    display: block;
+    margin: auto;
+    padding: 6px;
+    border-radius: 10px;
+    background-color: var(--text-color);
+    color: var(--section-color);
+}
+/* slide menu */
+.menu-bar{
+
+    width: 20%;
+    background-color: var(--dark-color);
+    height: 700px;
+    padding: 20px;
+    /* font-size: 25px; */
+    color: var(--section-color);
+}
+.search{
+    width:100%;
+    border-radius: 20px;
+
+}
+.menu-bar a{
+    color: var(--section-color); 
+    font-size: 25px; 
+}
+
+/* ................. */
